@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Gallery</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    text-align:center;
+
+    /* Background image */
+    background-image: url('background.jpg'); /* Replace with your background image file */
+    background-size: cover;      /* Makes the image cover the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+.container{
+    width:90%;
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    background: rgba(255, 255, 255, 0.8); /* semi-transparent white to make content readable */
+    border-radius: 12px;
+}
+
+video{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+
+.image{
+    margin-bottom:25px;
+}
+
+.image img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Autoplay Video -->
+<video autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support video.
+</video>
+
+<!-- Images -->
+<div class="image">
+    <img src="image1.jpg" alt="Image 1">
+</div>
+
+<div class="image">
+    <img src="image2.jpg" alt="Image 2">
+</div>
+
+<div class="image">
+    <img src="image3.jpg" alt="Image 3">
+</div>
+
+<div class="image">
+    <img src="image4.jpg" alt="Image 4">
+</div>
+
+</div>
+
+</body>
+</html>
